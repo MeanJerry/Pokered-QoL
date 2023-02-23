@@ -33,3 +33,9 @@ _Route4Text6::
 	line "MT.MOON -"
 	cont "CERULEAN CITY"
 	done
+
+_Route4Text7::
+	text "ROUTE 4"
+	line "NOW WITH RETURN"
+	cont "SERVICE TO PEWTER"
+	done
