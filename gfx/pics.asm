@@ -356,6 +356,7 @@ ChiefPic::
 ScientistPic::     INCBIN "gfx/trainers/scientist.pic"
 GiovanniPic::      INCBIN "gfx/trainers/giovanni.pic"
 RocketPic::        INCBIN "gfx/trainers/rocket.pic"
+RocketFPic::       INCBIN "gfx/trainers/rocket_f.pic"
 CooltrainerMPic::  INCBIN "gfx/trainers/cooltrainerm.pic"
 CooltrainerFPic::  INCBIN "gfx/trainers/cooltrainerf.pic"
 BrunoPic::         INCBIN "gfx/trainers/bruno.pic"

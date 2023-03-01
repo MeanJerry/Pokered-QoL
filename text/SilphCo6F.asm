@@ -57,7 +57,7 @@ _SilphCo6Text_1a2ab::
 
 _SilphCo6BattleText2::
 	text "I am one of the 4"
-	line "ROCKET BROTHERS!"
+	line "ROCKET SISTERS!"
 	done
 
 _SilphCo6EndBattleText2::
@@ -67,7 +67,7 @@ _SilphCo6EndBattleText2::
 
 _SilphCo6AfterBattleText2::
 	text "No matter!"
-	line "My brothers will"
+	line "My sisters will"
 	cont "avenge me!"
 	done
 

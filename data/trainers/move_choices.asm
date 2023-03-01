@@ -39,6 +39,7 @@ TrainerClassMoveChoiceModifications:
 	move_choices 1, 2    ; SCIENTIST
 	move_choices 1, 3    ; GIOVANNI
 	move_choices 1       ; ROCKET
+	move_choices 1       ; ROCKET_F
 	move_choices 1, 3    ; COOLTRAINER_M
 	move_choices 1, 3    ; COOLTRAINER_F
 	move_choices 1       ; BRUNO

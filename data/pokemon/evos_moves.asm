@@ -309,6 +309,8 @@ ExeggutorEvosMoves:
 	db 0
 ; Learnset
 	db 28, STOMP
+	db 30, CONFUSION
+	db 35, MEGA_DRAIN
 	db 0
 
 LickitungEvosMoves:
@@ -419,6 +421,7 @@ ArcanineEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 40, FLAMETHROWER
 	db 0
 
 MewEvosMoves:
@@ -1066,6 +1069,7 @@ NinetalesEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 40, FLAMETHROWER
 	db 0
 
 PikachuEvosMoves:

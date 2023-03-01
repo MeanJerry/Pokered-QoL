@@ -26,6 +26,7 @@
 	const SPRITE_MR_FUJI                 ; $16
 	const SPRITE_GIOVANNI                ; $17
 	const SPRITE_ROCKET                  ; $18
+	const SPRITE_ROCKET_F
 	const SPRITE_CHANNELER               ; $19
 	const SPRITE_WAITER                  ; $1a
 	const SPRITE_ERIKA                   ; $1b

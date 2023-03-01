@@ -29,6 +29,7 @@ TrainerDataPointers:
 	dw ScientistData
 	dw GiovanniData
 	dw RocketData
+	dw RocketFData
 	dw CooltrainerMData
 	dw CooltrainerFData
 	dw BrunoData
@@ -544,7 +545,7 @@ RocketData:
 	db 13, RATTATA, ZUBAT, 0
 	db 11, SANDSHREW, RATTATA, ZUBAT, 0
 	db 12, ZUBAT, EKANS, 0
-	db 16, RATICATE, 0
+	db 16, RATICATE, 0 ; Changed to Female Rocket
 ; Cerulean City
 	db 17, MACHOP, DROWZEE, 0
 ; Route 24
@@ -584,18 +585,18 @@ RocketData:
 	db 33, ARBOK, 0
 	db 33, HYPNO, 0
 ; Silph Co. 6F
-	db 29, MACHOP, MACHOKE, 0
+	db 29, MACHOP, MACHOKE, 0 ;ROCKET BROTHER (Rocket 30) - CHANGED TO SISTER.
 	db 28, ZUBAT, ZUBAT, GOLBAT, 0
 ; Silph Co. 7F
 	db 26, RATICATE, ARBOK, KOFFING, GOLBAT, 0
-	db 29, CUBONE, CUBONE, 0
+	db 29, CUBONE, CUBONE, 0 ;ROCKET BROTHER (Rocket 33) - CHANGED TO SISTER.
 	db 29, SANDSHREW, SANDSLASH, 0
 ; Silph Co. 8F
 	db 26, RATICATE, ZUBAT, GOLBAT, RATTATA, 0
-	db 28, WEEZING, GOLBAT, KOFFING, 0
+	db 28, WEEZING, GOLBAT, KOFFING, 0 ;ROCKET BROTHER (Rocket 36) - CHANGED TO SISTER
 ; Silph Co. 9F
 	db 28, DROWZEE, GRIMER, MACHOP, 0
-	db 28, GOLBAT, DROWZEE, HYPNO, 0
+	db 28, GOLBAT, DROWZEE, HYPNO, 0 ;ROCKET BROTHER (Rocket 38) - CHANGED TO SISTER
 ; Silph Co. 10F
 	db 33, MACHOKE, 0
 ; Silph Co. 11F
@@ -620,6 +621,16 @@ CooltrainerMData:
 	db 39, SANDSLASH, DUGTRIO, 0
 	db 43, RHYHORN, 0
 
+; Male Rocket Grunts that were changed to females did NOT have their teams removed from the 
+; RocketData table, as it would mess up all the index references further down the table.
+RocketFData:
+	db 30, MACHOP, MACHOKE, RATICATE, GOLBAT, 0 ; Silph 6F Rocket Sister
+	db 30, MEOWTH, CUBONE, RATICATE, CUBONE, 0 ; Silph 7F Rocket Sister
+	db 30, KOFFING, GOLBAT, WEEZING, ELECTRODE, 0 ; Silph 8F Rocket Sister
+	db 30, PERSIAN, GOLBAT, DROWZEE, HYPNO, 0 ; Silph 9F Rocket Sister
+	db $FF, 9, SANDSHREW, 9, RATTATA, 9, ZUBAT, 9, EKANS, 9, MEOWTH, 14, RATICATE, 0 ; Mt. Moon 2F Rocket Girl
+
+
 CooltrainerFData:
 ; Celadon Gym
 	db 24, WEEPINBELL, GLOOM, IVYSAUR, 0
@@ -636,28 +647,28 @@ CooltrainerFData:
 	db 43, PERSIAN, NINETALES, RAICHU, 0
 
 BrunoData:
-	db $FF, 53, ONIX, 55, HITMONCHAN, 55, HITMONLEE, 56, ONIX, 58, MACHAMP, 0
+	db $FF, 53, ONIX, 55, HITMONCHAN, 55, HITMONLEE, 56, GOLEM, 58, MACHAMP, 0
 
 BrockData:
-	db $FF, 12, GEODUDE, 14, ONIX, 0
+	db $FF, 12, GEODUDE, 13, RHYHORN, 14, ONIX, 0
 
 MistyData:
-	db $FF, 18, STARYU, 21, STARMIE, 0
+	db $FF, 17, VAPOREON, 19, STARYU, 21, STARMIE, 0
 
 LtSurgeData:
-	db $FF, 21, VOLTORB, 18, PIKACHU, 24, RAICHU, 0
+	db $FF, 17, VOLTORB, 21, JOLTEON, 18, PIKACHU, 24, RAICHU, 0
 
 ErikaData:
-	db $FF, 29, VICTREEBEL, 24, TANGELA, 29, VILEPLUME, 0
+	db $FF, 24, PARASECT, 24, TANGELA, 28, EXEGGCUTE, 29, VICTREEBEL, 29, VILEPLUME, 0
 
 KogaData:
-	db $FF, 37, KOFFING, 39, MUK, 37, KOFFING, 43, WEEZING, 0
-
-BlaineData:
-	db $FF, 42, GROWLITHE, 40, PONYTA, 42, RAPIDASH, 47, ARCANINE, 0
+	db $FF, 37, KOFFING, 39, MUK, 40, ARBOK, 42, BEEDRILL, 43, WEEZING, 0
 
 SabrinaData:
-	db $FF, 38, KADABRA, 37, MR_MIME, 38, VENOMOTH, 43, ALAKAZAM, 0
+	db $FF, 38, KADABRA, 37, MR_MIME, 38, VENOMOTH, 40, EXEGGUTOR, 43, ALAKAZAM, 0
+
+BlaineData:
+	db $FF, 41, FLAREON, 42, NINETALES, 42, RAPIDASH, 45, MAGMAR, 47, ARCANINE, 0
 
 GentlemanData:
 ; SS Anne 1F Rooms

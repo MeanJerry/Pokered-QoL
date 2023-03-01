@@ -114,17 +114,17 @@ _SilphCo7AfterBattleText2::
 
 _SilphCo7BattleText3::
 	text "I am one of the 4"
-	line "ROCKET BROTHERS!"
+	line "ROCKET SISTERS!"
 	done
 
 _SilphCo7EndBattleText3::
 	text "Aack!"
-	line "Brothers, I lost!"
+	line "Sisters, I lost!"
 	prompt
 
 _SilphCo7AfterBattleText3::
 	text "Doesn't matter."
-	line "My brothers will"
+	line "My sisters will"
 	cont "repay the favor!"
 	done
 

@@ -33,7 +33,8 @@ TrainerAIPointers:
 	dbw 1, GenericAI ; chief
 	dbw 3, GenericAI
 	dbw 1, GiovanniAI ; giovanni
-	dbw 3, GenericAI
+	dbw 3, GenericAI  ; Rocket
+	dbw 3, GenericAI  ; Rocket_F
 	dbw 2, CooltrainerMAI ; cooltrainerm
 	dbw 1, CooltrainerFAI ; cooltrainerf
 	dbw 2, BrunoAI ; bruno

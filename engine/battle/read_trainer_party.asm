@@ -124,23 +124,7 @@ ReadTrainer:
 	ld [wEnemyMon5Moves + 2], a
 	jr .FinishUp
 .ChampionRival ; give moves to his team
-
-; pidgeot
-	ld a, SKY_ATTACK
-	ld [wEnemyMon1Moves + 2], a
-
-; starter
-	ld a, [wRivalStarter]
-	cp STARTER3
-	ld b, MEGA_DRAIN
-	jr z, .GiveStarterMove
-	cp STARTER1
-	ld b, FIRE_BLAST
-	jr z, .GiveStarterMove
-	ld b, BLIZZARD ; must be squirtle
-.GiveStarterMove
-	ld a, b
-	ld [wEnemyMon6Moves + 2], a
+	call .RivalTeamMoves
 .FinishUp
 ; clear wAmountMoneyWon addresses
 	xor a
@@ -163,4 +147,37 @@ ReadTrainer:
 	inc de
 	dec b
 	jr nz, .LastLoop ; repeat wCurEnemyLVL times
+	ret
+
+.RivalTeamMoves
+	; pidgeot
+	ld a, FLY ; Was SKY_ATTACK
+	ld [wEnemyMon1Moves + 2], a
+	ld a, SWIFT 
+	ld [wEnemyMon1Moves], a
+
+; starter
+	ld a, [wRivalStarter]
+	cp STARTER3
+	ld b, LEECH_SEED ; Was MEGA_DRAIN
+	jr z, .GiveStarterMove
+	cp STARTER1
+	ld b, FLAMETHROWER ; Was FIRE_BLAST
+	jr z, .GiveStarterMove
+	ld b, ICE_BEAM ;Was BLIZZARD ; must be squirtle
+.GiveStarterMove
+	ld a, b
+	ld [wEnemyMon6Moves + 2], a
+; Attempt to give second move to starter mon
+	ld a, [wRivalStarter]
+	cp STARTER3
+	ld b, SLUDGE ; Venusaur
+	jr z, .GiveSecondMove
+	cp STARTER1
+	ld b, EARTHQUAKE ; Charizard
+	jr z, .GiveSecondMove
+	ld b, SURF ;Was BLIZZARD ; Blastoise
+.GiveSecondMove
+	ld a, b
+	ld [wEnemyMon6Moves + 1], a
 	ret

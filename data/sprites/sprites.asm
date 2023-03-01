@@ -31,6 +31,7 @@ SpriteSheetPointerTable:
 	overworld_sprite MrFujiSprite, 12           ; SPRITE_MR_FUJI
 	overworld_sprite GiovanniSprite, 12         ; SPRITE_GIOVANNI
 	overworld_sprite RocketSprite, 12           ; SPRITE_ROCKET
+	overworld_sprite RocketFSprite, 12          ; SPRITE_ROCKET_F
 	overworld_sprite ChannelerSprite, 12        ; SPRITE_CHANNELER
 	overworld_sprite WaiterSprite, 12           ; SPRITE_WAITER
 	overworld_sprite ErikaSprite, 12            ; SPRITE_ERIKA

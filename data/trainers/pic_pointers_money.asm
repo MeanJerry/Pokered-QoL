@@ -36,7 +36,8 @@ TrainerPicAndMoneyPointers::
 	pic_money ChiefPic,        3000
 	pic_money ScientistPic,    5000
 	pic_money GiovanniPic,     9900
-	pic_money RocketPic,       3000
+	pic_money RocketPic,       4000
+	pic_money RocketFPic,      2800
 	pic_money CooltrainerMPic, 3500
 	pic_money CooltrainerFPic, 3500
 	pic_money BrunoPic,        9900

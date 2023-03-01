@@ -32,6 +32,7 @@ TrainerNamePointers:
 	dw .ScientistName
 	dw wTrainerName
 	dw .RocketName
+	dw .RocketFName
 	dw .CooltrainerMName
 	dw .CooltrainerFName
 	dw wTrainerName
@@ -69,5 +70,6 @@ TrainerNamePointers:
 .ChiefName:         db "CHIEF@"
 .ScientistName:     db "SCIENTIST@"
 .RocketName:        db "ROCKET@"
+.RocketFName:       db "ROCKET♀@"
 .CooltrainerMName:  db "COOLTRAINER♂@"
 .CooltrainerFName:  db "COOLTRAINER♀@"
