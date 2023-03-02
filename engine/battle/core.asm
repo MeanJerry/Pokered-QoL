@@ -4607,8 +4607,7 @@ CriticalHitTest:
 	ld [wd0b5], a
 	call GetMonHeader
 	ld a, [wMonHBaseSpeed]
-	ld b, a
-	srl b                        ; (effective (base speed/2))
+	ld b, 16                    ; Hard set to all mons having a 16/256 chance to crit.
 	ldh a, [hWhoseTurn]
 	and a
 	ld hl, wPlayerMovePower
@@ -4623,15 +4622,11 @@ CriticalHitTest:
 	dec hl
 	ld c, [hl]                   ; read move id
 	ld a, [de]
-	bit GETTING_PUMPED, a        ; test for focus energy
-	jr nz, .focusEnergyUsed      ; bug: using focus energy causes a shift to the right instead of left,
-	                             ; resulting in 1/4 the usual crit chance
-	sla b                        ; (effective (base speed/2)*2)
-	jr nc, .noFocusEnergyUsed
-	ld b, $ff                    ; cap at 255/256
-	jr .noFocusEnergyUsed
-.focusEnergyUsed
-	srl b
+	bit GETTING_PUMPED, a        ; This bit is used both for FOCUS_ENERGY and for the DIRE_HIT item. They do not stack.
+	jr z, .noFocusEnergyUsed
+.focusEnergyUsed                 ; This is a 4x change now, since crit is a flat 16/256, it becomes 64/256, with no chance to overflow.
+	sla b
+	sla b
 .noFocusEnergyUsed
 	ld hl, HighCriticalMoves     ; table of high critical hit moves
 .Loop
@@ -4640,15 +4635,11 @@ CriticalHitTest:
 	jr z, .HighCritical          ; if so, the move about to be used is a high critical hit ratio move
 	inc a                        ; move on to the next move, FF terminates loop
 	jr nz, .Loop                 ; check the next move in HighCriticalMoves
-	srl b                        ; /2 for regular move (effective (base speed / 2))
 	jr .SkipHighCritical         ; continue as a normal move
 .HighCritical
-	sla b                        ; *2 for high critical hit moves
-	jr nc, .noCarry
-	ld b, $ff                    ; cap at 255/256
-.noCarry
-	sla b                        ; *4 for high critical move (effective (base speed/2)*8))
-	jr nc, .SkipHighCritical
+	sla b                        
+	sla b                        ; *4 for high critical move
+	jr nc, .SkipHighCritical	 ; A High-Crit + Pumped move has the potential to push a carry bit, so we still need the max cap carry test.
 	ld b, $ff
 .SkipHighCritical
 	call BattleRandom            ; generates a random value, in "a"
