@@ -35,6 +35,7 @@ SpriteSheetPointerTable:
 	overworld_sprite ChannelerSprite, 12        ; SPRITE_CHANNELER
 	overworld_sprite WaiterSprite, 12           ; SPRITE_WAITER
 	overworld_sprite ErikaSprite, 12            ; SPRITE_ERIKA
+	overworld_sprite ErikaOldSprite, 12         ; SPRITE_ERIKA_OLD
 	overworld_sprite MiddleAgedWomanSprite, 12  ; SPRITE_MIDDLE_AGED_WOMAN
 	overworld_sprite BrunetteGirlSprite, 12     ; SPRITE_BRUNETTE_GIRL
 	overworld_sprite LanceSprite, 12            ; SPRITE_LANCE

@@ -30,6 +30,7 @@
 	const SPRITE_CHANNELER               ; $19
 	const SPRITE_WAITER                  ; $1a
 	const SPRITE_ERIKA                   ; $1b
+	const SPRITE_ERIKA_OLD
 	const SPRITE_MIDDLE_AGED_WOMAN       ; $1c
 	const SPRITE_BRUNETTE_GIRL           ; $1d
 	const SPRITE_LANCE                   ; $1e
