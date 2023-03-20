@@ -618,6 +618,7 @@ SlowpokeEvosMoves:
 KadabraEvosMoves:
 ; Evolutions
 	db EV_TRADE, 1, ALAKAZAM
+	db EV_ITEM, TRADE_STONE, 1, ALAKAZAM
 	db 0
 ; Learnset
 	db 16, CONFUSION
@@ -631,6 +632,7 @@ KadabraEvosMoves:
 GravelerEvosMoves:
 ; Evolutions
 	db EV_TRADE, 1, GOLEM
+	db EV_ITEM, TRADE_STONE, 1, GOLEM
 	db 0
 ; Learnset
 	db 11, DEFENSE_CURL
@@ -656,6 +658,7 @@ ChanseyEvosMoves:
 MachokeEvosMoves:
 ; Evolutions
 	db EV_TRADE, 1, MACHAMP
+	db EV_ITEM, TRADE_STONE, 1, MACHAMP
 	db 0
 ; Learnset
 	db 20, LOW_KICK
@@ -714,7 +717,7 @@ ParasectEvosMoves:
 	db 0
 ; Learnset
 	db 13, STUN_SPORE
-	db 20, LEECH_LIFE
+	db 23, LEECH_LIFE
 	db 30, SPORE
 	db 39, SLASH
 	db 48, GROWTH
@@ -904,9 +907,9 @@ VenonatEvosMoves:
 	db 0
 ; Learnset
 	db 24, POISONPOWDER
-	db 27, LEECH_LIFE
-	db 30, STUN_SPORE
-	db 35, PSYBEAM
+	db 27, STUN_SPORE
+	db 30, PSYBEAM
+	db 35, LEECH_LIFE
 	db 38, SLEEP_POWDER
 	db 43, PSYCHIC_M
 	db 0
@@ -1134,6 +1137,7 @@ KabutoEvosMoves:
 	db 34, ABSORB
 	db 39, SLASH
 	db 44, LEER
+	db 48, LEECH_LIFE
 	db 49, HYDRO_PUMP
 	db 0
 
@@ -1145,6 +1149,7 @@ KabutopsEvosMoves:
 	db 39, SLASH
 	db 46, LEER
 	db 53, HYDRO_PUMP
+	db 54, LEECH_LIFE
 	db 0
 
 HorseaEvosMoves:
@@ -1321,6 +1326,7 @@ ZubatEvosMoves:
 	db 10, SUPERSONIC
 	db 15, BITE
 	db 21, CONFUSE_RAY
+	db 25, LEECH_LIFE
 	db 28, WING_ATTACK
 	db 36, HAZE
 	db 0
@@ -1343,7 +1349,7 @@ ParasEvosMoves:
 	db 0
 ; Learnset
 	db 13, STUN_SPORE
-	db 20, LEECH_LIFE
+	db 23, LEECH_LIFE
 	db 27, SPORE
 	db 34, SLASH
 	db 41, GROWTH
@@ -1441,8 +1447,8 @@ VenomothEvosMoves:
 	db 0
 ; Learnset
 	db 24, POISONPOWDER
-	db 27, LEECH_LIFE
 	db 30, STUN_SPORE
+	db 37, LEECH_LIFE
 	db 38, PSYBEAM
 	db 43, SLEEP_POWDER
 	db 50, PSYCHIC_M
@@ -1545,6 +1551,7 @@ GolbatEvosMoves:
 	db 10, SUPERSONIC
 	db 15, BITE
 	db 21, CONFUSE_RAY
+	db 31, LEECH_LIFE
 	db 32, WING_ATTACK
 	db 43, HAZE
 	db 0
@@ -1691,6 +1698,7 @@ MissingNo92EvosMoves:
 HaunterEvosMoves:
 ; Evolutions
 	db EV_TRADE, 1, GENGAR
+	db EV_ITEM, TRADE_STONE, 1, GENGAR
 	db 0
 ; Learnset
 	db 29, HYPNOSIS
@@ -2134,6 +2142,7 @@ VictreebelEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 10, LEECH_LIFE
 	db 13, WRAP
 	db 15, POISONPOWDER
 	db 18, SLEEP_POWDER

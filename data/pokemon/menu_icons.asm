@@ -1,14 +1,14 @@
 MonPartyData:
 	nybble_array MonPartyData
-	nybble ICON_GRASS     ; Bulbasaur
-	nybble ICON_GRASS     ; Ivysaur
-	nybble ICON_GRASS     ; Venusaur
-	nybble ICON_MON       ; Charmander
-	nybble ICON_MON       ; Charmeleon
-	nybble ICON_MON       ; Charizard
-	nybble ICON_WATER     ; Squirtle
-	nybble ICON_WATER     ; Wartortle
-	nybble ICON_WATER     ; Blastoise
+	nybble ICON_BULBASUAR     ; Bulbasaur
+	nybble ICON_BULBASUAR     ; Ivysaur
+	nybble ICON_BULBASUAR     ; Venusaur
+	nybble ICON_CHARMANDER       ; Charmander
+	nybble ICON_CHARMANDER       ; Charmeleon
+	nybble ICON_CHARMANDER       ; Charizard
+	nybble ICON_SQUIRTLE     ; Squirtle
+	nybble ICON_SQUIRTLE     ; Wartortle
+	nybble ICON_SQUIRTLE     ; Blastoise
 	nybble ICON_BUG       ; Caterpie
 	nybble ICON_BUG       ; Metapod
 	nybble ICON_BUG       ; Butterfree

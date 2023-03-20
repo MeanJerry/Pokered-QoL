@@ -276,12 +276,16 @@ OverworldLoopLessDelay::
 .moveAhead2
 	ld hl, wFlags_0xcd60
 	res 2, [hl]
+	ld a, [hJoyHeld] 	; -- These lines should allow a "Running Shoes" enhancement
+	and B_BUTTON		; -- Running Shoes
+	jr nz, .speedUp		; -- Running Shoes
 	ld a, [wWalkBikeSurfState]
 	dec a ; riding a bike?
 	jr nz, .normalPlayerSpriteAdvancement
 	ld a, [wd736]
 	bit 6, a ; jumping a ledge?
 	jr nz, .normalPlayerSpriteAdvancement
+.speedUp				; -- Running Shoes
 	call DoBikeSpeedup
 .normalPlayerSpriteAdvancement
 	call AdvancePlayerSprite
