@@ -20,12 +20,12 @@ MonPartySpritePointers:
 	mon_icon_header SnakeIconFrame1,      1, 1, ICON_SNAKE << 2 + 2
 	mon_icon_header QuadrupedIconFrame1,  0, 1, ICON_QUADRUPED << 2
 	mon_icon_header QuadrupedIconFrame1,  1, 1, ICON_QUADRUPED << 2 + 2
-	mon_icon_header BulbasaurIconFrame1,  1, 1, ICON_BULBASUAR << 2 + 2
-	mon_icon_header BulbasaurIconFrame1,  1, 1, ICON_BULBASUAR << 2 + 2
-	mon_icon_header CharmanderIconFrame1,  1, 1, ICON_CHARMANDER << 2 + 2
-	mon_icon_header CharmanderIconFrame1,  1, 1, ICON_CHARMANDER << 2 + 2
-	mon_icon_header SquirtleIconFrame1,  1, 1, ICON_SQUIRTLE << 2 + 2
-	mon_icon_header SquirtleIconFrame1,  1, 1, ICON_SQUIRTLE << 2 + 2
+	;mon_icon_header BulbasaurIconFrame1,  1, 1, ICON_BULBASUAR << 2 + 2
+	;mon_icon_header BulbasaurIconFrame1,  0, 1, ICON_BULBASUAR << 2
+	;mon_icon_header CharmanderIconFrame1,  0, 1, ICON_CHARMANDER << 2
+	;mon_icon_header CharmanderIconFrame1,  1, 1, ICON_CHARMANDER << 2 + 2
+	;mon_icon_header SquirtleIconFrame1,  0, 1, ICON_SQUIRTLE << 2
+	;mon_icon_header SquirtleIconFrame1,  1, 1, ICON_SQUIRTLE << 2 + 2
 	mon_icon_header TradeBubbleIconGFX,   0, 4, ICON_TRADEBUBBLE << 2
 	mon_icon_header MonsterSprite,        0, 4, ICONOFFSET + ICON_MON << 2
 	mon_icon_header PokeBallSprite,       0, 8, ICONOFFSET + ICON_BALL << 2
@@ -40,10 +40,10 @@ MonPartySpritePointers:
 	mon_icon_header SnakeIconFrame2,      1, 1, ICONOFFSET + ICON_SNAKE << 2 + 2
 	mon_icon_header QuadrupedIconFrame2,  0, 1, ICONOFFSET + ICON_QUADRUPED << 2
 	mon_icon_header QuadrupedIconFrame2,  1, 1, ICONOFFSET + ICON_QUADRUPED << 2 + 2
-	mon_icon_header BulbasaurIconFrame2,  1, 1, ICON_BULBASUAR << 2 + 2
-	mon_icon_header BulbasaurIconFrame2,  1, 1, ICON_BULBASUAR << 2 + 2
-	mon_icon_header CharmanderIconFrame2,  1, 1, ICON_CHARMANDER << 2 + 2
-	mon_icon_header CharmanderIconFrame2,  1, 1, ICON_CHARMANDER << 2 + 2
-	mon_icon_header SquirtleIconFrame2,  1, 1, ICON_SQUIRTLE << 2 + 2
-	mon_icon_header SquirtleIconFrame2,  1, 1, ICON_SQUIRTLE << 2 + 2
+	;mon_icon_header BulbasaurIconFrame2,  0, 1, ICONOFFSET + ICON_BULBASUAR << 2
+	;mon_icon_header BulbasaurIconFrame2,  1, 1, ICONOFFSET + ICON_BULBASUAR << 2 + 2
+	;mon_icon_header CharmanderIconFrame2,  0, 1, ICONOFFSET + ICON_CHARMANDER << 2
+	;mon_icon_header CharmanderIconFrame2,  1, 1, ICONOFFSET + ICON_CHARMANDER << 2 + 2
+	;mon_icon_header SquirtleIconFrame2,  0, 1, ICONOFFSET + ICON_SQUIRTLE << 2
+	;mon_icon_header SquirtleIconFrame2,  1, 1, ICONOFFSET + ICON_SQUIRTLE << 2 + 2
 	mon_icon_header TradeBubbleIconGFX,   4, 4, ICONOFFSET + ICON_TRADEBUBBLE << 2

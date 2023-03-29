@@ -70,18 +70,19 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_BADGE       ; $22
 	const PAL_CAVE        ; $23
 	const PAL_GAMEFREAK   ; $24
-	const PAL_MAGNET      ; $25
-	const PAL_ROCK        ; $26
-	const PAL_SQULAP      ; $27
-	const PAL_WARBLA      ; $28
-	const PAL_BUIVVE      ; $29
-	const PAL_CHARMANDER  ; $30
-	const PAL_CHARMELEON  ; $31
-	const PAL_CHARIZARD   ; $32
-	const PAL_ARTIC       ; $33
-	const PAL_CHOPCHAMP   ; $34
-	const PAL_MACHOKE     ; $35
-	const PAL_MAGIKARP    ; $36
-	const PAL_KANGAS      ; $37
-	const PAL_BUTTERFREE  ; $38
+	const PAL_BLACKWHITE  ; $25
+	const PAL_MAGNET      ; $26
+	const PAL_ROCK        ; $27
+	const PAL_SQULAP      ; $28
+	const PAL_WARBLA      ; $29
+	const PAL_BUIVVE      ; $30
+	const PAL_CHARMANDER  ; $31
+	const PAL_CHARMELEON  ; $32
+	const PAL_CHARIZARD   ; $33
+	const PAL_ARTIC       ; $34
+	const PAL_CHOPCHAMP   ; $35
+	const PAL_MACHOKE     ; $36
+	const PAL_MAGIKARP    ; $37
+	const PAL_KANGAS      ; $38
+	const PAL_BUTTERFREE  ; $39
 DEF NUM_SGB_PALS EQU const_value
